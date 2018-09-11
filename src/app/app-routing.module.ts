@@ -8,20 +8,25 @@ import { PortfolioItemComponent } from './pagues/portfolio-item/portfolio-item.c
 
 
 const app_routes: Routes = [
-  { path: '' , component: PortfolioComponent },
+  { path: '', component: PortfolioComponent },
   { path: 'about', component: AboutComponent },
   { path: 'portfolio-item', component: PortfolioItemComponent },
   // ruta por defecto sino cae en las anteriormente declaras
-  { path: '**', pathMatch: 'full', redirecTo: '' }
+  { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 
 
 @NgModule({
   imports: [
     CommonModule,
-    //agrego el arreglo de rutas en los imports
-    RouteModule.forRoot( app_routes )
+    // agrego el arreglo de rutas en los imports
+    RouterModule.forRoot( app_routes )
   ],
-  declarations: []
+  declarations: [],
+  // agregando el router modulo para poder utilizarlo en los componentes
+  exports: [
+    RouterModule
+  ],
+  providers: [],
 })
 export class AppRoutingModule { }
