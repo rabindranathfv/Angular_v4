@@ -13,6 +13,7 @@ import { PortfolioComponent } from './pagues/portfolio/portfolio.component';
 import { AboutComponent } from './pagues/about/about.component';
 import { PortfolioItemComponent } from './pagues/portfolio-item/portfolio-item.component';
 import { ContatUsComponent } from './pagues/contat-us/contat-us.component';
+import { ItemComponent } from './pagues/item/item.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ContatUsComponent } from './pagues/contat-us/contat-us.component';
     PortfolioComponent,
     AboutComponent,
     PortfolioItemComponent,
-    ContatUsComponent
+    ContatUsComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
