@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 
 //Routing
 import { AppRoutingModule } from './/app-routing.module';
+// Me permite realizar solicitudes http de todo tipo (get, post, put, delete)
+import { HttpClientModule } from '@angular/common/http';
 
 //Components
 import { AppComponent } from './app.component';
@@ -14,6 +16,7 @@ import { AboutComponent } from './pagues/about/about.component';
 import { PortfolioItemComponent } from './pagues/portfolio-item/portfolio-item.component';
 import { ContatUsComponent } from './pagues/contat-us/contat-us.component';
 import { ItemDetailComponent } from './pagues/item-detail/item-detail.component';
+import { HttpClient } from 'selenium-webdriver/http';
 
 
 @NgModule({
@@ -29,7 +32,8 @@ import { ItemDetailComponent } from './pagues/item-detail/item-detail.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
