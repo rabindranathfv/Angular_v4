@@ -12,6 +12,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { PortfolioComponent } from './pagues/portfolio/portfolio.component';
 import { AboutComponent } from './pagues/about/about.component';
 import { PortfolioItemComponent } from './pagues/portfolio-item/portfolio-item.component';
+import { ContatUsComponent } from './pagues/contat-us/contat-us.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PortfolioItemComponent } from './pagues/portfolio-item/portfolio-item.c
     FooterComponent,
     PortfolioComponent,
     AboutComponent,
-    PortfolioItemComponent
+    PortfolioItemComponent,
+    ContatUsComponent
   ],
   imports: [
     BrowserModule,
