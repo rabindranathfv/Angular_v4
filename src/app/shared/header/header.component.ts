@@ -9,7 +9,7 @@ import { InfoPageService } from '../../services/info-page.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor( public _infoPageInterface: InfoPageService ) { }
+  constructor( public infoPageInterface: InfoPageService ) { }
 
   ngOnInit() {
   }
