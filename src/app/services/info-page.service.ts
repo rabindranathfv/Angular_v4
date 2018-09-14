@@ -23,11 +23,11 @@ export class InfoPageService {
 
   private loadInfo() {
 // get data from json
-    this.http.get('https://angularv6portfolio.firebaseio.com/equipo.json').subscribe( ( resp: infoPageInterface ) => {
+    this.http.get('https://angularv6portfolio.firebaseio.com/data-page.json').subscribe( ( resp: infoPageInterface ) => {
       this.info = resp;
 
       this.load = true;
-      console.log(resp);
+      // console.log(resp);
     });
   }
 
@@ -35,7 +35,7 @@ export class InfoPageService {
     this.http.get('https://angularv6portfolio.firebaseio.com/equipo.json').subscribe( ( resp: any[] ) => {
       this.team = resp;
       this.team_load = true;
-      console.log(resp);
+      // console.log(resp);
     });
   }
 }
