@@ -14,7 +14,7 @@ const app_routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'portfolio-item', component: PortfolioItemComponent },
   { path: 'contactUs', component: ContatUsComponent },
-  { path: 'item-detail', component: ItemDetailComponent },
+  { path: 'item-detail/:id', component: ItemDetailComponent },
   // ruta por defecto sino cae en las anteriormente declaras
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];

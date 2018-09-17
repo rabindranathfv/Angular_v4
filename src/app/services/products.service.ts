@@ -21,4 +21,8 @@ export class ProductsService {
       console.log(resp);
     });
   }
+
+  public getProducts( id: string) {
+    return this.http.get('https://angularv6portfolio.firebaseio.com/productos/' +  id + '.json');
+  }
 }
