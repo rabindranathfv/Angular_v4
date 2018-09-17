@@ -25,7 +25,7 @@ export class ItemDetailComponent implements OnInit {
           .subscribe( ( product: detailProducts ) => {
             this.idP = parameters['id'];
             this.prodctDetail = product;
-            console.log(product);
+            // console.log(product);
           });
       });
   }

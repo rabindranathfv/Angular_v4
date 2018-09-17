@@ -1,6 +1,7 @@
 <section *ngIf="prodctDetail">
-<header class="rk-portfolio-cover  item-inside-1">
+<header class="rk-portfolio-cover"  >
     <div class="item-inside__meta">
+      <img src="assets/productos/{{ idP }}/main.jpg" [ngStyle]="{'background-size:':  '50%', 'background-position:' :' 50% 100%' }" alt="">
       <h1 class="ae-u-bolder rk-portfolio-title ">{{ prodctDetail.producto  }}</h1>
       <p class="ae-theta rk-portfolio-category ">{{ prodctDetail.categoria  }}</p>
     </div>
@@ -19,12 +20,12 @@
         <p class="ae-eta">{{ prodctDetail.desc1  }}</p>
       </div>
       <div class="ae-grid__item item-lg-6 item-lg--offset-1">
-        <img src="assets/productos/{{ idP }}/pic-1.jpg" alt="Urku Portfolio">
+        <img [ngStyle]="{'background-size:':  '50%', 'background-position:' :' 50% 100%' }" alt="">
       </div>
     </div>
     <div class="ae-grid ae-grid--collapse">
       <div class="ae-grid__item item-lg-8">
-        <img src="assets/productos/{{ idP }}/pic-2.jpg" alt="Urku Portfolio">
+        <img [ngStyle]="{'background-size:':  '50%', 'background-position:' :' 50% 100%' }" alt="">
       </div>
       <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
         <p>AQUI DESC2 {{ prodctDetail.desc2  }}</p>
