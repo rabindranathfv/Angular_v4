@@ -3,7 +3,13 @@
     <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
           <!-- Massonery Distribution      -->
 
-      <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+      <div *ngIf="infoProductsInterface.load_products" align="center">
+        <h2>Loading!</h2>
+        <div class="loader loader--style1" title="0"></div>
+        <p>Wait please!</p>
+      </div>
+
+      <div *ngIf="!infoProductsInterface.load_products" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
         <a *ngFor="let prod of infoProductsInterface.products" href="" [routerLink]="['/item-detail',prod.cod]" class="rk-item ae-masonry__item">
           <img src="assets/productos/{{ prod.url }}" alt="">
         <div class="item-meta" id="{{ prod.cod }}">
@@ -11,7 +17,7 @@
             <p>{{ prod.categoria }}</p>
         </div>
         </a>
-    </div>
+      </div>
 
     </section>
 
