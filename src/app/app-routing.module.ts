@@ -7,6 +7,7 @@ import { PortfolioComponent } from './pagues/portfolio/portfolio.component';
 import { PortfolioItemComponent } from './pagues/portfolio-item/portfolio-item.component';
 import { ContatUsComponent } from './pagues/contat-us/contat-us.component';
 import { ItemDetailComponent } from './pagues/item-detail/item-detail.component';
+import { SearchComponent } from './pagues/search/search.component';
 
 
 const app_routes: Routes = [
@@ -15,6 +16,7 @@ const app_routes: Routes = [
   { path: 'portfolio-item', component: PortfolioItemComponent },
   { path: 'contactUs', component: ContatUsComponent },
   { path: 'item-detail/:id', component: ItemDetailComponent },
+  { path: 'search/:searchTerm', component: SearchComponent },
   // ruta por defecto sino cae en las anteriormente declaras
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];

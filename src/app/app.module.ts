@@ -17,6 +17,7 @@ import { PortfolioItemComponent } from './pagues/portfolio-item/portfolio-item.c
 import { ContatUsComponent } from './pagues/contat-us/contat-us.component';
 import { ItemDetailComponent } from './pagues/item-detail/item-detail.component';
 import { HttpClient } from 'selenium-webdriver/http';
+import { SearchComponent } from './pagues/search/search.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { HttpClient } from 'selenium-webdriver/http';
     AboutComponent,
     PortfolioItemComponent,
     ContatUsComponent,
-    ItemDetailComponent
+    ItemDetailComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
