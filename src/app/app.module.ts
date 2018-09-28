@@ -28,7 +28,6 @@ import { SearchComponent } from './pagues/search/search.component';
     PortfolioComponent,
     AboutComponent,
     PortfolioItemComponent,
-    ContatUsComponent,
     ItemDetailComponent,
     SearchComponent
   ],

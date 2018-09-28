@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { infoProductsInterface } from '../interfaces/infoProducts.interface';
+import { timeout } from 'q';
 
 @Injectable({
   providedIn: 'root'
@@ -23,8 +24,12 @@ export class ProductsService {
 
         this.http.get('https://angularv6portfolio.firebaseio.com/productos_idx.json').subscribe ( (resp: infoProductsInterface[] ) => {
         this.products = resp;
-        this.load_products = false;
+
         // console.log(resp);
+
+        setTimeout( () => {
+          this.load_products = false;
+        }, 1000);
         resolve();
       });
     });
