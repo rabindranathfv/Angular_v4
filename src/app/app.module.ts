@@ -14,7 +14,6 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { PortfolioComponent } from './pagues/portfolio/portfolio.component';
 import { AboutComponent } from './pagues/about/about.component';
 import { PortfolioItemComponent } from './pagues/portfolio-item/portfolio-item.component';
-import { ContatUsComponent } from './pagues/contat-us/contat-us.component';
 import { ItemDetailComponent } from './pagues/item-detail/item-detail.component';
 import { HttpClient } from 'selenium-webdriver/http';
 import { SearchComponent } from './pagues/search/search.component';
