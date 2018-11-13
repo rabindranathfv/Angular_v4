@@ -24,11 +24,11 @@ export class ProductsService {
     // promesas ecs6
     return new Promise( (resolve,reject) => {
 
-        this.http.get('https://angularv6portfolio.firebaseio.com/productos_idx.json').subscribe ( (resp: infoProductsInterface[] ) => {
+        this.http.get('https://angularv6portfolio.firebaseio.com/productos_idx.json')
+            .subscribe ( (resp: infoProductsInterface[] ) => {
+
         this.products = resp;
-
         // console.log(resp);
-
         setTimeout( () => {
           this.load_products = false;
         }, 1000);
