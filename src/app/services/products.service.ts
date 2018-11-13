@@ -62,7 +62,8 @@ export class ProductsService {
 
     this.products.forEach( products => {
       const tituloLower = products.titulo.toLocaleLowerCase();
-      if ( products.categoria.indexOf(searchTerm) >= 0 || tituloLower.indexOf(searchTerm) >= 0 ) {
+      const categoriaLower = products.categoria.toLocaleLowerCase();
+      if (categoriaLower.indexOf(searchTerm) >= 0 || tituloLower.indexOf(searchTerm) >= 0  ) {
         // console.log(products.categoria.indexOf(searchTerm));
         this.productsFilter.push(products);
         this.productExist = true;
