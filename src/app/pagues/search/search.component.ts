@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { infoProductsInterface } from '../../interfaces/infoProducts.interface';
 import { ProductsService } from '../../services/products.service';
-import { processServiceMock } from '../../../../../../frontend_app/app/mocks/process.service.mock';
 
 @Component({
   selector: 'app-search',

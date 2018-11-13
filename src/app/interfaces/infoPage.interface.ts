@@ -5,5 +5,7 @@ export interface infoPageInterface {
   pagina_autor?: string;
   facebook?: string;
   twitter?: string;
+  github?: string;
+  freecodecamp?: string;
   team_work?: any[];
 }

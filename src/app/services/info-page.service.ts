@@ -25,7 +25,6 @@ export class InfoPageService {
 // get data from json
     this.http.get('https://angularv6portfolio.firebaseio.com/data-page.json').subscribe( ( resp: infoPageInterface ) => {
       this.info = resp;
-
       this.load = true;
       // console.log(resp);
     });
