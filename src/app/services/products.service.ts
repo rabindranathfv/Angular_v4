@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { infoProductsInterface } from '../interfaces/infoProducts.interface';
+import { infoTechnologiesInterface } from '../interfaces/infoTechnologies.interface';
 import { timeout } from 'q';
 
 @Injectable({
@@ -12,6 +13,7 @@ export class ProductsService {
   load_products = true;
   productsFilter: infoProductsInterface[] = [];
   productExist = false;
+  skillsTechnologies: infoTechnologiesInterface[] = [] ;
 
   constructor( private http: HttpClient ) {
     this.loadProducts();
