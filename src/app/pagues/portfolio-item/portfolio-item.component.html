@@ -10,11 +10,11 @@
         <div *ngIf=" evenIndex ; else oddSection">
             <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
                 <div class="ae-grid__item item-lg-5 au-lg-ptp-1">
-                    <h4 class="ae-u-bolder">{{ prod.titulo }}</h4>
-                    <p class="au-mb-3">{{ prod.resumen }}</p>
+                    <h4 class="ae-u-bolder animated fadeIn delay-1s ae-grid__item">{{ prod.titulo }}</h4>
+                    <p class="au-mb-3 animated fadeIn delay-1s ae-grid__item">{{ prod.resumen }}</p>
                 </div>
                 <div class="ae-grid__item item-lg-6 item-lg--offset-1">
-                    <img src="assets/productos/{{ prod.url }}" alt="{{ prod.categoria }} ">
+                    <img src="assets/productos/{{ prod.url }}" alt="{{ prod.categoria }}" [routerLink]="['/item-detail',prod.cod]" class="animated fadeIn delay-1s ae-grid__item">
                 </div>
             </div>
         </div>
@@ -22,11 +22,11 @@
         <ng-template #oddSection>
             <div class="ae-grid ae-grid--collapse">
                 <div class="ae-grid__item item-lg-8">
-                    <img src="assets/productos/{{ prod.url }}" alt=" ">
+                    <img src="assets/productos/{{ prod.url }}" alt="{{ prod.categoria }}" [routerLink]="['/item-detail',prod.cod]" class="animated fadeIn delay-1s ae-grid__item">
                 </div>
-                <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
-                    <p class="au-mb-3">{{ prod.resumen }}</p>
-                    <p class="ae-u-bolder">{{ prod.titulo }}</p>
+                <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1 animated fadeIn delay-2s">
+                    <p class="au-mb-3 animated fadeIn delay-1s ae-grid__item">{{ prod.resumen }}</p>
+                    <p class="ae-u-bolder animated fadeIn delay-1s ae-grid__item">{{ prod.titulo }}</p>
                 </div>
             </div>
         </ng-template>

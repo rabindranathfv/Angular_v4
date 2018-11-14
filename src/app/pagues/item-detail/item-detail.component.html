@@ -2,7 +2,7 @@
     <div class="ae-container-fluid">
         <div class="item-inside__meta">
             <!-- <img src="assets/productos/{{ idP }}/main.jpg" [ngStyle]="{'background-size:':  '50%', 'background-position:' :' 50% 100%' }" alt=""> -->
-            <h1 class="ae-u-bolder rk-portfolio-title ">{{ prodctDetail.producto }}</h1>
+            <h4 class="ae-u-bolder">{{ prodctDetail.producto }}</h4>
             <p class="ae-theta rk-portfolio-category ">{{ prodctDetail.categoria }}</p>
         </div>
     </div>
@@ -17,7 +17,7 @@
         <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
             <div class="ae-grid__item item-lg-5 au-lg-ptp-1">
                 <h4 class="ae-u-bolder">{{ prodctDetail.subtitulo1 }}</h4>
-                <p class="ae-eta">{{ prodctDetail.desc1 }}</p>
+                <p class="ae-theta rk-portfolio-category">{{ prodctDetail.desc1 }}</p>
             </div>
             <div class="ae-grid__item item-lg-6 item-lg--offset-1">
                 <img src="assets/productos/{{ idP }}/pic-1.jpg" alt="">
@@ -29,13 +29,13 @@
             </div>
             <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
                 <p>{{ prodctDetail.desc2 }}</p>
-                <p class="ae-u-bolder">{{ prodctDetail.producto }}</p>
+                <h4 class="ae-u-bolder">{{ prodctDetail.producto }}</h4>
             </div>
         </div>
         <div class="ae-grid ae-grid--collapse au-xs-ptp-1 au-xs-pbp-1">
             <div class="ae-grid__item item-lg-8 item-lg--offset-2">
                 <h4 class="ae-u-bolder">{{ prodctDetail.subtitulo1 }}</h4>
-                <p class="ae-eta">{{ prodctDetail.resumen }}</p>
+                <p class="ae-theta rk-portfolio-category">{{ prodctDetail.resumen }}</p>
             </div>
         </div>
 
