@@ -45,10 +45,10 @@ export class ProductsService {
 
     if ( this.products.length === 0 ) {
       this.loadProducts().then( () => {
-        this.getProductsFilter(searchTerm);
+        this.getProductsFilter( searchTerm.toLocaleLowerCase());
       });
     } else {
-      this.getProductsFilter(searchTerm);
+      this.getProductsFilter(searchTerm.toLocaleLowerCase());
     }
 
     // console.log("filtro de productos");
@@ -56,10 +56,8 @@ export class ProductsService {
   }
 
   private getProductsFilter( searchTerm: string) {
-
     // reseteando el arreglo para evitar duplicidad
     this.productsFilter = [];
-
     this.products.forEach( products => {
       const tituloLower = products.titulo.toLocaleLowerCase();
       const categoriaLower = products.categoria.toLocaleLowerCase();
