@@ -4,4 +4,5 @@ export interface infoProductsInterface {
   cod?: string;
   titulo?: string;
   url?: string;
+  resumen?: string;
 }
